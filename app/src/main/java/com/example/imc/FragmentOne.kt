@@ -31,7 +31,7 @@ class FragmentOne : Fragment() {
         val texto = view.findViewById<TextView>(R.id.textViewOne)
 
 
-        val getArgument = arguments!!.getString("DADOS")!!.format(Locale.US,"%0.4f")
+        val getArgument = arguments!!.getString("DADOS")!!.format(Locale.US,"%0.2f")
 
         texto.text = getArgument
 
